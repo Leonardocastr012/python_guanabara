@@ -6,6 +6,6 @@ aluno2 = str(input('Digite um seu nome: '))
 aluno3 = str(input('Digite um seu nome: '))
 aluno4 = str(input('Digite um seu nome: '))
 listaDeAlunos = [aluno1, aluno2, aluno3, aluno4]
-shuffle(listaDeAlunos) 
+shuffle(listaDeAlunos) #Embaralha a lista
 
 print(f'O professor escolheu a seguinte ordem os alunos {listaDeAlunos}')
