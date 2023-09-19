@@ -6,7 +6,7 @@ dezena = number[-2]
 centena = number[-3]
 milhar = number[-4]
 
-print(f'''unidade: {number[-1]}
-dezena: {number[-2]}
-centena: {number[-3]}
-milhar: {number[-4]}''')
+print(f'''Unidade: {number[-1]}
+Dezena: {number[-2]}
+Centena: {number[-3]}
+Milhar: {number[-4]}''')
