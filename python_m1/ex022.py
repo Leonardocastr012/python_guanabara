@@ -1,0 +1,2 @@
+#Crie um programa que leia o nome completo de uma pessoa e mostre:
+'''Nome com todas letras maiúsculas, todas letras minúsculas, todas letras ao todo sem contar espaços, quantas letras tem o primeiro nome'''
