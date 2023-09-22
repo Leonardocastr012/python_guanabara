@@ -2,3 +2,13 @@
 '''– Média abaixo de 5.0: REPROVADO
 – Média entre 5.0 e 6.9: RECUPERAÇÃO
 – Média 7.0 ou superior: APROVADO'''
+nota1 = float(input('Digite sua nota: '))
+nota2 = float(input('Digite sua outra nota: '))
+media = (nota1 + nota2) / 2
+
+if media >= 7:
+    print('APROVADO')
+elif 5 <= media < 7:
+    print('Vai para RECUPERAÇÃO')
+else:
+    print('REPROVADO')
