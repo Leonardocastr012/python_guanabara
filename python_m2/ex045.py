@@ -5,7 +5,7 @@ escolhaUsuario = int(input('''Você escolhe sua opção:
 [2]Papel                           
 [3]Tesoura
 Sua opção: '''))
-print('-='*20)
+print('-='*26)
 #Pegar os nomes das opções do usuário
 if escolhaUsuario == 1:
     escolhaUsuario = 'Pedra'
@@ -24,8 +24,7 @@ elif escolhaMaquina == 3:
     escolhaMaquina = 'Tesoura'
 
 #Comparar as escolhas da máquina e usuário
-print(f'Você escolheu {escolhaUsuario} e a máquina {escolhaMaquina}!') # Mostra as escolhas
-print('-='*20)
+print(f'Você escolheu {escolhaUsuario} e a máquina {escolhaMaquina}! ', end='') # Mostra as escolhas
 if escolhaUsuario == escolhaMaquina:
     print('EMPATE!')
 elif escolhaUsuario != escolhaMaquina: # As possibilidades que não são empate
@@ -41,6 +40,6 @@ elif escolhaUsuario != escolhaMaquina: # As possibilidades que não são empate
         print('Você PERDEU!')    
     elif escolhaUsuario == 'Tesoura' and escolhaMaquina == 'Papel':
         print('Você VENCEU!') 
-print('-='*5)
+print('-='*26)
 print('FIM DE JOGO!')
-print('-='*5)
+print('-='*6)
