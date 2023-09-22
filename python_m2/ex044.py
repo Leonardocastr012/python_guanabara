@@ -21,5 +21,5 @@ elif pagamento == 3:
 if pagamento == 4:
     parcelas = int(input('Qual a quantidade de parcelas[3 ou +]? '))
     novoValorComJuros = valor + (valor * 0.20) # novo valor com 20% de juros
-    valorParcelado = novoValorComJuros / parcelas
+    valorParcelado = novoValorComJuros / parcelas # valor parcelado
     print(f'Seu pagamento fica {parcelas}x de R${valorParcelado:.2f}!')
