@@ -6,7 +6,7 @@ contMenor = 0
 for c in range (1, 7):
     anoDeNascimento = int(input(f'Digite o ano de nascimento da {c}º pessoa: '))
     idade = anoAtual - anoDeNascimento
-    if idade < 18:
+    if idade < 21:
         contMenor += 1
     else:
         contMaior += 1
