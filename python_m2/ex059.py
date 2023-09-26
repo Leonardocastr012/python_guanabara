@@ -8,7 +8,7 @@ Seu programa deverá realizar a operação solicitada em cada caso.'''
 a = float(input('Digite um valor: '))
 b = float(input('Digite um valor: '))
 while True:
-    escolha = str(input('''Faça sua escolha:
+    escolha = int(input('''Faça sua escolha:
     [ 1 ] somar
     [ 2 ] multiplicar
     [ 3 ] maior
@@ -32,13 +32,6 @@ while True:
     elif escolha == 4: # Digitar novos números
         a = float(input('Digite um valor: '))
         b = float(input('Digite um valor: '))
-        escolha = str(input('''Faça sua escolha:
-        [ 1 ] somar
-        [ 2 ] multiplicar
-        [ 3 ] maior
-        [ 4 ] novos números
-        [ 5 ] sair do programa
-        Sua escolha: '''))
     elif escolha == 5:
         print('Programa encerrado!')
         break
