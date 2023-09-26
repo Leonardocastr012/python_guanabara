@@ -3,7 +3,6 @@
 from random import randint
 numeroSorteado = randint(1,5)
 numeroUsuario = int(input('Adivinhe um número entre 0 e 5: '))
-
 if (numeroUsuario == numeroSorteado):
     print('Você acertou!')
 else:
