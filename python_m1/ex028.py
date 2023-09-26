@@ -2,7 +2,6 @@
 #O programa deverá escrever na tela se o usuário venceu ou perdeu.
 from random import randint
 numeroSorteado = randint(1,5)
-print(numeroSorteado)
 numeroUsuario = int(input('Adivinhe um número entre 0 e 5: '))
 
 if (numeroUsuario == numeroSorteado):
