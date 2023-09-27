@@ -1,17 +1,17 @@
 # Melhore o DESAFIO 61, perguntando para o usuário se ele quer mostrar mais alguns termos. 
 #O programa encerrará quando ele disser que quer mostrar 0 termos.
-n = int(input('Quantos termos de fibonacci você quer mostrar? '))
-n1 = 0 # antecessor f(n-1)
-n2 = 1 # antecessor do antecessor f(n-2)
-count = 0
-while count != n + 1:# quando o contador tiver chegado na posição que foi pedida no n para/ n + 1 pois quando tiver na posição 5 por exemplo e n = 5, ele tem que mostrar a posição 5, caso contrário ele ia para e não ai mostrar a posição 5
-    if count == 1:
-        print(f'{n1} ', end ='') # primeiro termo é 0
-    if count >= 2:
-        fn = n1 + n2 # fórmula de fibonacci
-        print(f'-> {fn} ', end='')
-        # Assumindo as novas posições
-        n2 = n1
-        n1 = fn
-    count += 1
-print(' -> Acabou!')
+a1 = float(input('Digite o primeiro termo: '))
+r = float(input('Qual a razão? '))
+n = 1 #posição do número na sequência
+
+total = 0
+mais = 10 # Programa inicia com 10
+while mais != 0: # quando digitar 0 acaba
+    total += mais
+    while n != total + 1:  #para ir até 10 inicialmente/ coloquei esse mais 1 para incluir o 10
+        an = a1 + (n -1)*r # fórmula pa
+        print(f'A termo {n}º da progressão é {an}')
+        n += 1 # Vai aumentando 1 pois no próximo loop é a próxima posição
+    print('PAUSA')
+    mais = int(input('Quantos termos você quer mostrar a mais? '))
+print('Acabou!')
