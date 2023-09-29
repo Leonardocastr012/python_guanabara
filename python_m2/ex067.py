@@ -1,7 +1,5 @@
 #Faça um programa que mostre a tabuada de vários números, um de cada vez, para cada valor digitado pelo usuário.
 #O programa será interrompido quando o número solicitado for negativo.
-#Faça um programa que mostre a tabuada de vários números, um de cada vez, para cada valor digitado pelo usuário.
-#O programa será interrompido quando o número solicitado for negativo.
 n = 0
 while n >= 0:
     n = float(input('Digite um número e saiba sua tabuada: '))
