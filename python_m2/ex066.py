@@ -11,8 +11,6 @@ while True:
         soma = soma - 999 # tirar da soma total o 999
         cont -= 1 # Tirar o 999 dos números inteiros digitados
         break
-<<<<<<< HEAD
 print(f'Foram digitados {cont} números e sua soma deu {soma}.')
-=======
 print(f'Foram digitados {cont} números e sua soma deu {soma}.')
->>>>>>> 35ede5331e46035a0a54013b88250669078e993a
+print(f'Foram digitados {cont} números e sua soma deu {soma}.')
