@@ -5,12 +5,9 @@ cont = 0
 soma = 0
 while True:
     n = int(input('Digite um número inteiro[Digite 999 para parar]: '))
+    if n == 999: # Quando for 999 digitado
+        break
+    #Coloquei depois da flag para quando dar break não contar que o número 999
     cont += 1 # Contador
     soma += n 
-    if n == 999: # Quando for 999 digitado
-        soma = soma - 999 # tirar da soma total o 999
-        cont -= 1 # Tirar o 999 dos números inteiros digitados
-        break
-print(f'Foram digitados {cont} números e sua soma deu {soma}.')
-print(f'Foram digitados {cont} números e sua soma deu {soma}.')
 print(f'Foram digitados {cont} números e sua soma deu {soma}.')
