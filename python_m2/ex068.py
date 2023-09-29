@@ -36,4 +36,8 @@ while True:
             print('Você VENCEU!')
             cont += 1
 print('-='*30)
+<<<<<<< HEAD
 print(f'GAME OVER! {cont} vitória(s)!')
+=======
+print(f'GAME OVER! {cont} vitória(s)!')
+>>>>>>> 35ede5331e46035a0a54013b88250669078e993a
