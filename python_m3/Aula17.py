@@ -1,3 +1,5 @@
+#Prática da aula 17
+
 num = [2, 5, 9, 1]
 #Substitui elemento
 num[2] = 3
