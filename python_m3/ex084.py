@@ -12,13 +12,13 @@ while True:
     pessoa.append(float(input('Peso: ')))
 
     #Analisando os dados
-    
-    if pessoa[1] > maiorPeso or maiorPeso == 0:
-        maiorPeso = pessoa[1]
-        pessoaMaior = pessoa[0]
-    if pessoa[1] < menorPeso or menorPeso == 0:
-        menorPeso = pessoa[1]
-        pessoaMenor = pessoa[0]
+    for p in cadastro:
+        if p[1] > maiorPeso or maiorPeso == 0:
+            maiorPeso = p[1]
+            pessoaMaior = p[0]
+        if p[1] < menorPeso or menorPeso == 0:
+            menorPeso = p[1]
+            pessoaMenor = p[0]
     
     cadastro.append(pessoa[:])
     pessoa.clear()
