@@ -21,7 +21,9 @@ for p in galera2:
 print('-='*30)
 for p in galera2:
     print(f'{p[0]} tem {p[1]} anos de idade.')
-#Pegando dados
+#Terceiro teste
+
+#Lendo os dados
 pessoas = list()
 dado = list()
 totalMaiorDeIdade = totalMenorDeIdade = 0
@@ -32,7 +34,7 @@ for c in range(0, 3):
     dado.clear() # Para lista tá limpa para o próximo loop
 print(pessoas)
 
-#Só maiores de idade
+#Analisando os dados
 for p in pessoas:
     if p[1] >= 21:
         print(f'{p[0]} é maior de idade!')
