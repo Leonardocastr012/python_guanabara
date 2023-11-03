@@ -19,7 +19,7 @@ while True:
             menorPeso = p[1]
     
     #Preparando os dados para o próximo loop
-    cadastro.append(pessoa[:]) #Tem que ser a lisat clone se não os dados ficam ligados e não da de alterar as coisas
+    cadastro.append(pessoa[:]) #Tem que ser a lista clone se não os dados ficam ligados e não da de alterar as coisas
     pessoa.clear() # Tem que limpar a lista que vai ser colocada dentro da outra lista pois no loop trabalhamos só com ela de lista, caso contrário teria que substituir o elemento na posição da lista
 
     #Quebrando o loop infinito
