@@ -9,9 +9,14 @@ print(f"{'JOGA NA MEGA SENA':^40}")
 print('-'*40)
 escolhaDeJogos = int(input('Quantos jogos deseja sortear? '))
 for i in range(0, escolhaDeJogos): #Quantidade de jogos que seram feitos
-    for j in range(0, 6): #Formando os jogos da mega sena que são 6 números
+    contador = 0
+    while True: #Formando os jogos da mega sena que são 6 números
         num = randint(1,60)
-        jogoDaMegaSena.append(num)
+        if num not in jogoDaMegaSena:
+            jogoDaMegaSena.append(num)
+            contador += 1
+        if contador == 6:
+            break
     jogoDaMegaSena.sort() #Vai deixar em ordem crescente
     palpites.append(jogoDaMegaSena[:]) #Pegando uma lista clonada para não ter elo com a lista quando for modificada
     jogoDaMegaSena.clear()
@@ -22,4 +27,3 @@ for i in range(0, escolhaDeJogos): #Quantidade de jogos que seram feitos
     print(f'Jogo {i + 1}: {palpites[i]}')
     if i == 5:
         print('-='*5, '< BOA SORTE! >', '-='*5)
-#Está repentindo os números nos jogos
