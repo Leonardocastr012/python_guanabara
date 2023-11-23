@@ -1,0 +1,2 @@
+#Faça um programa que leia nome e média de um aluno, guardando também a situação em um dicionário. No final, mostre o conteúdo da estrutura na tela.
+# reprovado(nota<=5), recuperação(5<nota<7) e aprovado(nota>=7)
