@@ -15,10 +15,10 @@ ranking = sorted(jogadores.items(), key= itemgetter(1), reverse=True) # Se fosse
 print('>>> Ranking de jogadores <<<')
 contador = 1
 for elemento in ranking:
-    print(f'{contador}° Lugar - {elemento[0]} ficou com {elemento[1]}')
+    print(f'{contador} Lugar - {elemento[0]} ficou com {elemento[1]}')
     contador += 1
     sleep(1)
 #Guanabas usou
-# for i, v in enumerate(ranking):
-#     print(f'{i + 1}° Lugar - {v[0]} ficou com {v[1]}')
-#     sleep(1)
+for i, v in enumerate(ranking):
+    print(f'{i + 1}° Lugar - {v[0]} ficou com {v[1]}')
+    sleep(1)
