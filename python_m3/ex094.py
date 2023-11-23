@@ -35,19 +35,19 @@ while True:
         if escolha == 'N':
             break
 
-# print(f'Ao todo temos {len(pessoas)} pessoas cadastradas')
-# #Média
+print(f'Ao todo temos {len(pessoas)} pessoas cadastradas')
+#Média
 mediaIdade = idadeSomada / len(pessoas)
-# print(f'A média de idade é {mediaIdade:.2f} anos')
-# #Mulheres cadastradas
-# print('As mulheres cadastradas foram: ', end='')
-# for i in range(0, len(mulheresCadastradas)):
-#     print(f'{mulheresCadastradas[i]}', end= ' ')
-# print()
+print(f'A média de idade é {mediaIdade:.2f} anos')
+#Mulheres cadastradas
+print('As mulheres cadastradas foram: ', end='')
+for i in range(0, len(mulheresCadastradas)):
+    print(f'{mulheresCadastradas[i]}', end= ' ')
+print()
 #Acima da idade média
 print('Lista de pessoas com idade acima da média:')
 for elemento in pessoas:#Em teoria ele vai elemento por elemento e print vazio vai quebrar a linha depois de terminar o dado do elemento
-    for k, v in elemento.items(): #Aqui ele vai pegar os dados de cada elemento
-        if pessoa['Idade'] > mediaIdade:
-            print(f'{k} = {v}; ', end= '')
-    print()
+    if elemento['Idade'] > mediaIdade: #Vai verificar de cada elemento a idade e ver se é maior que a média
+        for k, v in elemento.items(): #Aqui ele vai pegar os dados de cada elemento
+                print(f'{k} = {v}; ', end= '')
+        print()
