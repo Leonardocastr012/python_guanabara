@@ -22,7 +22,7 @@ while True:
     if escolha == 'N':
          break
 linha()
-print(f'{"cod":<3} {"nome":<15}{"gols":<30}{"total"}')#Eu fiz o alinhamento de texto
+print(f'{"cod":<3} {"nome":<15}{"gols":<30}{"total"}')#Eu fiz o alinhamento de texto/Concatenação
 for i , elemento in enumerate(jogadores):
     print(f'{i:>3} {str(elemento["Nome"]) :<15}{str(elemento["gols"]) :<30}{str(elemento["golsTotais"]) :<5}') #Tive colocar os elementos dentro do str() pois tava dando erro de TypeError: unsupported format string passed to list.__format__
 linha()
@@ -34,5 +34,5 @@ while True:
     print(f'>>Levantamento do jogador: {jogadores[escolha2]["Nome"]}<<')
 
     for i in range (0, jogadores[escolha2]['Partidas']): # Vai ser números de partida de um jogador específico
-        print(f'   =>Na partida {i + 1}, fez {jogadores[escolha2]["gols"][i]} gols') #Vai mostrar cada gol de cada partida, pois vai acessar primeiro um jogador específico, depois dentro do discionário vai acessar a chave gols qeu tem uma lista dentro e logo após vai acessar o gol da posição referente ao i
+        print(f'   =>Na partida {i + 1}, fez {jogadores[escolha2]["gols"][i]} gols') #Vai mostrar cada gol de cada partida, pois vai acessar primeiro um jogador específico, depois dentro do dicionário vai acessar a chave 'gols' que tem uma lista dentro e logo após vai acessar o gol da posição referente ao i
     print(f'Foi um total de {jogadores[escolha2]["golsTotais"]} gols ') #Peguei os gols totais acessando o dicionário dentro da lista
