@@ -5,16 +5,16 @@ def cabeçalho():
     print('\033[0;30;42m~\033[m'*len(nome))
     print(f'\033[0;30;42m{nome:^}\033[m')
     print('\033[0;30;42m~\033[m'*len(nome))
-
 def cabeçalhoInterno(msg):
     nome = 'ACESSANDO O MANUAL DE COMANDO: '
     print('\033[0;30;46m~\033[m'*(len(nome)+len(msg)))
     print(f'\033[0;30;46m{nome:^}{msg:<}\033[m')
     print('\033[0;30;46m~\033[m'*(len(nome)+len(msg)))
-
 def menu(msg):
-    return f'\033[0;37;40m{help(msg)}\033[m'
-
+    print('\033[7;37m',end='')
+    help(msg)
+    print('\033[m',end='')
+    
 def PyHelp():
     while True:
         cabeçalho()
@@ -23,5 +23,4 @@ def PyHelp():
             break
         cabeçalhoInterno(scan)
         menu(scan)
-
 PyHelp()
