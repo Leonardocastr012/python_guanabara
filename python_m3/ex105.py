@@ -4,6 +4,8 @@
 – A menor nota
 – A média da turma
 – A situação (opcional)'''
+def linha():
+    print('-='*40)
 
 def notas(*num, situação=False):
     #Dicionário
@@ -37,7 +39,27 @@ def notas(*num, situação=False):
             notas['Situação'] = 'Boa'
         else:
             notas['Situação'] = 'Excelente'
-    print(notas)
+    return notas
+linha()
+print(notas(1,2,3,4,5))
+print(notas(9.9,9.5,10,9,8, situação=True))
 
-notas(1,2,3,4,5)
-notas(9.9,9.5,10,9,8, situação=True)
+#Solução guanabas
+def notas2(*num, situação=False):
+    notas = dict()
+    notas['Total'] = len(num)
+    notas['Maior'] = max(num)
+    notas['Menor'] = min(num)
+    notas['Média'] = sum(num)/len(num)
+    #Caso opcional
+    if situação: # Aqui situção pode receber o valor booleando true, quando acontece if True, roda o código dentro do if
+        if notas['Média'] < 7:
+            notas['Situação'] = 'Ruim'
+        elif 7 <= notas['Média'] <= 8:
+            notas['Situação'] = 'Boa'
+        else:
+            notas['Situação'] = 'Excelente'
+    return notas
+linha()
+print(notas2(1,2,3,4,5))
+print(notas2(9.9,9.5,10,9,8, situação=True))
