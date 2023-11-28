@@ -8,7 +8,7 @@ def leiaInt(msg):
             valorInt = int(scan) #Transformando string em inteiro
             break #fecha o loop quando tiver um valor inteiro
         else:
-            print('\033[0;31mERRO! Não é um do tipo inteiro\033[m') #onde pego as cores: 
+            print('\033[0;31mERRO! Não é um do tipo inteiro\033[m') #onde pego as cores: https://www.dio.me/articles/colocando-cores-no-seu-programa-em-python
     return valorInt
 #Program principal
 n = leiaInt('Digite um número: ')
