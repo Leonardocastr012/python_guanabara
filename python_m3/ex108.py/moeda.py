@@ -21,3 +21,6 @@ def moeda(valor): #formatar a moeda
         return f'R${valorInteiro},00'
     else:
         return f'R${valorInteiro},{duasCasasDecimias:.0f}' # usei o .:0f para ficar só a parte inteira
+
+def moeda2(preço=0,moeda='R$'): #versão guanabara
+    return f'{moeda}{preço:>.2f}'.replace('.', ',')
