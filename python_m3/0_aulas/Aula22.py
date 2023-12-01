@@ -36,4 +36,7 @@ Reutilização em outros projetos
 Básimente é ter dentro de pacotes vários módulos para importação
 Normalmente usado em projetos bem grandes
 
+Nessa pasta tem o
+pacote: uteis
+módulos: datas, numeros, strings
 '''
