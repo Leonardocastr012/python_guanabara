@@ -4,7 +4,7 @@ def aumentar(num, taxa, formato=False):
     return numAumentado if formato is False else moeda(num)
     #o parâmetro formato serve para já passar pela função moeda e assim vai usar apenas as outras funções
     #no caso ela faz a mudança do . para , ainda aqui no módulo 
-
+    #Uso do parâmetro opcional
 def diminuir(num, taxa, formato=False):
     numDiminuido = num - (num*(taxa/100))
     return numDiminuido if formato is False else moeda(num)
