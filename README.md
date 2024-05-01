@@ -1,5 +1,5 @@
 # python_guanabara
-### Exercícios de python do Cursos em Video:
+## Exercícios de python do Cursos em Video:
 ### Python Mundo 1 40h:
 * Introduziu a linguagem python, como instalar, qual IDE usar, comandos básicos, condicionais e cores no terminal.
 - [x] 35/35 exercícios concluídos
