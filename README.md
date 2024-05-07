@@ -9,4 +9,3 @@
 ### Python Mundo 3 40h:
 * Aprofundou o conhecimento ensinando tuplas, listas, dicionários, funções, módulos e pacotes, tratamento de erros e arquivo.
 - [x] 44/44 exercícios concluído
-***
