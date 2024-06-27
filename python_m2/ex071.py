@@ -7,7 +7,7 @@ ced = 50
 contCed = 0
 while True:
     if total >= ced: # Se é maior que o valor atual da cédula vai realizar as operações
-        total -= ced # vai tiraro valor atual quantas vezes for necessário
+        total -= ced # vai tirar o valor atual quantas vezes for necessário
         contCed += 1
     else: # Quando não tiver mais como tirar o valor atual
         if contCed > 0: # Só vai aparecer caso tenha quantidade de pelo menos 1 cédula
